@@ -1,5 +1,5 @@
 Name:           inxi
-Version:        1.8.45
+Version:        1.8.47
 Release:        1%{?dist}
 Summary:        A full featured system information script
 
@@ -43,5 +43,8 @@ install -D -m 644 %{name}.1.gz %{buildroot}/%{_mandir}/man1/%{name}.1.gz
 
 
 %changelog
+* Tue May 07 2013 Vasiliy N. Glazov <vascom2@gmail.com> 1.8.47-1.R
+- Update to 1.8.47
+
 * Mon Apr 22 2013 Vasiliy N. Glazov <vascom2@gmail.com> 1.8.45-1.R
 - Initial release
