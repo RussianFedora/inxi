@@ -1,5 +1,5 @@
 Name:           inxi
-Version:        1.9.7
+Version:        1.9.9
 Release:        1%{?dist}
 Summary:        A full featured system information script
 
@@ -43,6 +43,9 @@ install -D -m 644 %{name}.1.gz %{buildroot}/%{_mandir}/man1/%{name}.1.gz
 
 
 %changelog
+* Tue Jun 18 2013 Vasiliy N. Glazov <vascom2@gmail.com> 1.9.9-1
+- Update to 1.9.9
+
 * Tue Jun 04 2013 Vasiliy N. Glazov <vascom2@gmail.com> 1.9.7-1.R
 - Update to 1.9.7
 
