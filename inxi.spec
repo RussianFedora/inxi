@@ -1,12 +1,14 @@
+%global svnrev  2033
+
 Name:           inxi
 Version:        1.9.12
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        A full featured system information script
 Summary(ru):    Скрипт вывода полной информации об оборудовании и системе
 
 License:        GPLv3
 URL:            http://code.google.com/p/inxi/
-Source0:        %{name}-%{version}.tar.xz
+Source0:        http://inxi.googlecode.com/svn-history/r%{svnrev}/trunk/%{name}.tar.gz
 
 BuildArch:      noarch
 
@@ -17,6 +19,9 @@ Requires:       net-tools
 Requires:       pciutils
 Requires:       procps
 Requires:       lm_sensors
+Requires:       usbutils
+Requires:       hddtemp
+Requires:       xorg-x11-utils
 
 %description
 Inxi offers a wide range of built-in options, as well as a good number of extra
@@ -29,7 +34,7 @@ Inxi позволяет выводить различную информацию
 
 
 %prep
-%setup -q
+%setup -q -c
 
 
 %build
@@ -46,6 +51,10 @@ install -p -D -m 644 %{name}.1.gz %{buildroot}/%{_mandir}/man1/%{name}.1.gz
 
 
 %changelog
+* Tue Aug 06 2013 Vasiliy N. Glazov <vascom2@gmail.com> 1.9.12-3
+- Change source0 link
+- Added Requires
+
 * Tue Aug 06 2013 Vasiliy N. Glazov <vascom2@gmail.com> 1.9.12-2
 - Correct spec and descriptions
 
