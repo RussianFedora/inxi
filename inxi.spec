@@ -2,7 +2,7 @@
 
 Name:           inxi
 Version:        1.9.12
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        A full featured system information script
 Summary(ru):    Скрипт вывода полной информации об оборудовании и системе
 
@@ -12,9 +12,6 @@ Source0:        http://inxi.googlecode.com/svn-history/r%{svnrev}/trunk/%{name}.
 
 BuildArch:      noarch
 
-Requires:       bash
-Requires:       coreutils
-Requires:       gawk grep
 Requires:       net-tools
 Requires:       pciutils
 Requires:       procps
@@ -51,6 +48,9 @@ install -p -D -m 644 %{name}.1.gz %{buildroot}/%{_mandir}/man1/%{name}.1.gz
 
 
 %changelog
+* Wed Aug 07 2013 Vasiliy N. Glazov <vascom2@gmail.com> 1.9.12-4
+- Removed unnecessary Requires
+
 * Tue Aug 06 2013 Vasiliy N. Glazov <vascom2@gmail.com> 1.9.12-3
 - Change source0 link
 - Added Requires
