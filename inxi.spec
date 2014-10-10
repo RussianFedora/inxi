@@ -1,5 +1,7 @@
 %global svnrev  2033
 
+aa
+
 Name:           inxi
 Version:        1.9.12
 Release:        5%{?dist}
@@ -49,7 +51,7 @@ install -p -D -m 644 %{name}.1.gz %{buildroot}/%{_mandir}/man1/%{name}.1.gz
 
 
 %changelog
-* Wed Aug 08 2013 Vasiliy N. Glazov <vascom2@gmail.com> 1.9.12-5
+* Thu Aug 08 2013 Vasiliy N. Glazov <vascom2@gmail.com> 1.9.12-5
 - Correct executable permissions
 
 * Wed Aug 07 2013 Vasiliy N. Glazov <vascom2@gmail.com> 1.9.12-4
