@@ -1,7 +1,7 @@
 %global svnrev  2033
 
-aa
-
+ab
+b
 Name:           inxi
 Version:        1.9.12
 Release:        5%{?dist}
